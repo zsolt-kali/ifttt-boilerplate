@@ -25,7 +25,7 @@ router.use(function(req, res, next) {
     }
 });
 
-router.use('/triggers', require('./triggers') );
+router.use('/triggers', require('./triggers/my-trigger') );
 router.use('/actions', require('./actions') );
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/ifttt/v1)
